@@ -1,21 +1,51 @@
 # BLEFYI Embed Widget
 
-> Embeddable BLEFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> Bluetooth Low Energy, GATT. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/blefyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/blefyi-embed@1/dist/embed.min.js"></script>
+<div data-blefyi="frequency" data-slug="example"></div>
+```
+
+## Available Widget Types (7)
+
+- spec: `data-blefyi="spec"`
+- compare: `data-blefyi="compare"`
+- glossary: `data-blefyi="glossary"`
+- faq: `data-blefyi="faq"`
+- guide: `data-blefyi="guide"`
+- search: `data-blefyi="search"`
+- frequency (interactive): `data-blefyi="frequency"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-blefyi="frequency" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/blefyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://blefyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://blefyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://blefyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://blefyi.com
 - Widget docs: https://widget.blefyi.com
-- npm: https://www.npmjs.com/package/blefyi-embed
+- API documentation: https://blefyi.com/developers/
+- npm package: https://www.npmjs.com/package/blefyi-embed
 - GitHub: https://github.com/fyipedia/blefyi-embed
-- API: https://blefyi.com/developers/
 
-## Tag FYI Widget Family
+## Tag FYI Widget Network
 
 - [BarcodeFYI Widget](https://widget.barcodefyi.com)
 - [QRCodeFYI Widget](https://widget.qrcodefyi.com)
