@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# BLEFYI Embed Widget
+# Main site: https://blefyi.com
+# Widget docs: https://widget.blefyi.com
+# npm: https://www.npmjs.com/package/blefyi-embed
